@@ -1,0 +1,28 @@
+#title {
+    text-align:center;
+    color:blue;
+  }
+  body {
+   margin-left:15%;
+   margin-right:15%;
+   line-height:30px;
+   font-family:arial;
+   background-color:rgba(155,244,12,0.7)
+   }
+   form {
+     background-color:rgba(00,00,00,0.5);
+     padding:2em;
+     
+   }
+   
+   button {
+     width:100%;
+   }
+   form>input {
+     width:100%
+   }
+   textarea {
+     width:100%
+   }
+  
+   

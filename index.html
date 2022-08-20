@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Test</title>
-    </head>
-    <body>
-       <h1 id="tittle"></h1>
-       <p id="description"> </p>
-       <form id="survey-form">
-         <label for="name" > Name: </label> <br/>
-         <input id="name" type="text"><br/>
-         <label for="email">Email:</label><br/><input id="email"><br/>
-         <label for="number"> Age:</label><br/>
-         <input id="number" type="number" min="10"    max="99" ><br/>
-       </form>
-    </body>
+
+<head>
+  <title>Test</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <h1 id="title">FreeCodeCamp Survey Form</h1>
+  <p id="description"> FreeCodeCamp Survey Form
+    Thank you for taking the time to help us improve the platform
+  </p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label"> Name: </label> <br />
+    <input id="name" type="text" placeholder="Enter your Name" required><br /><br />
+    <label for="email" id="email-label">Email:</label><br />
+    <input type="email" id="email" placeholder="Enter your Email" required><br /><br />
+    <label for="number" id="number-label"> Age:</label><br />
+    <input id="number" type="number" min="10" max="99" placeholder="Age"><br /><br />
+
+    <label for="dropdown" id="number-label"> Select your Role:</label><br /><br />
+    <select id="dropdown" placeholder="Select current Role">
+      <option value="Student">Student</option>
+      <option value="Full time Job">Full time Job</option>
+      <option value="Full time Learner">Full time Learner</option>
+      <option value="Prefer Not to say">Prefer Not to say</option>
+      <option value="Other">Other</option>
+    </select></br><br />
+    <radio>
+
+      <label id="gender"> Select your Gender:</label></br>
+      <input type="radio" id="male" value="male" name="gender">
+      <label for="male"> Male</label>
+      <input type="radio" id="female" value="female" name="gender">
+      <label for="female"> Female</label>
+      <input type="radio" id="other" value="other" name="gender">
+      <label for="other"> Other</label><br /><br />
+
+      <input type="checkbox" name="Definitely" value="Definitely">
+      <label for="Definitely">Definitely</label></br>
+      <input type="checkbox" name="May be" value="Definitely">
+      <label for="May be">May be</label></br>
+      <input type="checkbox" name="May not be" value="May not be">
+      <label for="checkboxes">May not be</label></br><br />
+      <label>Remarks:</label></br>
+      <textarea type="textarea" id="textarea" placeholder="Text Area"></textarea><br /><br />
+
+      <button id="submit">Submit</button>
+  </form>
+</body>
 
 </html>
